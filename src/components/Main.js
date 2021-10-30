@@ -27,6 +27,8 @@ const Main = (props) => {
         getShow();
     }
 
+    useEffect(() => getShow(), []);
+
     return (
         <main>
             <Switch>

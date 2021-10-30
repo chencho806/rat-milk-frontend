@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+
+import { useState } from "react";
 
 const ShowsIndex =(props) => {
     const loaded = () => {
@@ -14,7 +15,43 @@ const ShowsIndex =(props) => {
     }
     const loading = () => <h1>Loading ...</h1>
 
-    return props.show ? loaded() : loading()
+    return(
+        <section>
+            <form>
+                <input 
+                value={newForm.img} 
+                onChange={handleChange} 
+                type="url"  
+                placeholder="Image URL"
+                name="img"/>
+
+                <input 
+                value={newForm.date} 
+                onChange={handleChange} 
+                type="text"  
+                placeholder="Date"
+                name="date"/>
+
+                <input 
+                value={newForm.venue} 
+                onChange={handleChange} 
+                type="text"  
+                placeholder="Venue"
+                name="venue"/>
+
+                <input 
+                value={newForm.info} 
+                onChange={handleChange} 
+                type="info"  
+                placeholder="Info"
+                name="ingo"/>
+
+                <input type="submit" value= "Add" />
+            </form>
+            
+            { props.show ? loaded() : loading() }
+        </section>
+    )
 };
 
 

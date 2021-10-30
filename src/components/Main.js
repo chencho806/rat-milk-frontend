@@ -1,14 +1,15 @@
+import  { useState, useEffect } from 'react'
 import { Route, Switch } from 'react-router-dom';
 import ShowsIndex from '../pages/ShowsIndex';
 import Show from '../pages/Show';
 
 
 
-function Main(props) {
+const Main = (props) => {
     return (
         <main>
             <Switch>
-                <Route exact path= '/'>
+                <Route exact path= "/">
                     <ShowsIndex />
                 </Route>
                 <Route 

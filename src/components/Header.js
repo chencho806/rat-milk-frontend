@@ -1,5 +1,12 @@
 const Header=(props) => {
-    return <h1>Rattlesnake Milk</h1>
+    return (
+        <header className="Header">
+            <Link to="/">
+                <h1>Rattlesnake Milk</h1>
+            </Link>
+
+        </header>
+    )   
 };
 
 

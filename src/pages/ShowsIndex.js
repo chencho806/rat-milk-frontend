@@ -1,7 +1,16 @@
 
-import { useState } from "react";
+import { Link } from 'react-router-dom'
+import { useState } from 'react';
 
 const ShowsIndex =(props) => {
+
+    const [newForm, setNewForm ] = useState({
+        img: "",
+        date: "",
+        venue: "",
+        info: ""
+    });
+
     const loaded = () => {
         return props.show.map(show => (
             <div key={show._id} className="show">
@@ -14,6 +23,14 @@ const ShowsIndex =(props) => {
         ))
     }
     const loading = () => <h1>Loading ...</h1>
+
+    const handleChange = () => {
+
+    }
+
+    const handleSubmit = () => {
+
+    }
 
     return(
         <section>

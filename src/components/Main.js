@@ -27,6 +27,22 @@ const Main = (props) => {
         getShow();
     }
 
+    const updateShow = async (show) => {
+        await fetch(BASE_URL + id, {
+            method: 'PUT',
+            headers: {
+                'Content-type': 'Application/json'
+            },
+            body: JSON.stringify(show)
+        });
+        getShow();
+    }
+
+    const deleteShow = async id => {
+        await fetch(BASE_URL + id, {method: 'DELETE'});
+        getShow();
+    }
+
     useEffect(() => getShow(), []);
 
     return (
@@ -40,6 +56,9 @@ const Main = (props) => {
                     render={(rp) => (
                         <Show 
                             {...rp}
+                            show={show}
+                            updateShow={updateShow}
+                            deleteShow={deleteShow}
                         />
                     )} 
                 />

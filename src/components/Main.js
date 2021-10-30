@@ -33,7 +33,7 @@ const Main = (props) => {
         <main>
             <Switch>
                 <Route exact path= "/">
-                    <ShowsIndex />
+                    <ShowsIndex show={show} createShow={createShow}/>
                 </Route>
                 <Route 
                     path="/:id" 

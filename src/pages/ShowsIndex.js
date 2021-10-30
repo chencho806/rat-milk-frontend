@@ -20,13 +20,20 @@ const ShowsIndex =(props) => {
                 <h3>{show.venue}</h3>
                 <h3>{show.info}</h3>
             </div>
-        ))
+        ));
     }
-    const loading = () => <h1>Loading ...</h1>
 
-    const handleChange = () => {
+    const loading = () => <h1>Loading ...</h1>;
 
+    const handleChange = (event) => {
+        setNewForm(prevState => ({
+                ...prevState,
+                [event.target.name]: event.target.value
+            }
+        ));
     }
+
+
 
     const handleSubmit = () => {
 

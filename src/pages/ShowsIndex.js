@@ -4,12 +4,7 @@ import { useState } from 'react';
 
 const ShowsIndex =(props) => {
 
-    const [newForm, setNewForm ] = useState({
-        img: "",
-        date: "",
-        venue: "",
-        info: ""
-    });
+    const [newForm, setNewForm ] = useState(getNewState());
 
     const loaded = () => {
         return props.show.map(show => (
@@ -35,13 +30,24 @@ const ShowsIndex =(props) => {
 
 
 
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        props.createShow(newForm)
+        setNewForm(getNewState());
+    }
 
+    function getNewState() {
+        return {
+            img: "",
+            date: "",
+            venue: "",
+            info: ""
+        };
     }
 
     return(
         <section>
-            <form>
+            <form className="Form" onSubmit={handleSubmit}>
                 <input 
                 value={newForm.img} 
                 onChange={handleChange} 
@@ -68,7 +74,7 @@ const ShowsIndex =(props) => {
                 onChange={handleChange} 
                 type="info"  
                 placeholder="Info"
-                name="ingo"/>
+                name="info"/>
 
                 <input type="submit" value= "Add" />
             </form>

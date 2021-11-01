@@ -15,25 +15,25 @@ const Main = (props) => {
         setShows(data);
     }
 
-    const createShows = async (shows) => {
+    const createShows = async (show) => {
         await fetch(BASE_URL, {
             method: 'POST',
             headers: {
                 'Content-type': 'Application/json'
             },
-            body: JSON.stringify(shows)
+            body: JSON.stringify(show)
         });
 
         getShows();
     }
 
-    const updateShows = async (shows, id) => {
+    const updateShows = async (show, id) => {
         await fetch(BASE_URL + id, {
             method: 'PUT',
             headers: {
                 'Content-type': 'Application/json'
             },
-            body: JSON.stringify(shows)
+            body: JSON.stringify(show)
         });
         getShows();
     }
@@ -54,12 +54,14 @@ const Main = (props) => {
                 <Route 
                     path="/shows/:id" 
                     render={(rp) => (
+
                         <Show 
                             {...rp}
                             shows={shows}
                             updateShows={updateShows}
                             deleteShows={deleteShows}
                         />
+                        
                     )} 
                 />
             </Switch>

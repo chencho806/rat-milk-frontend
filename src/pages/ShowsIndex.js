@@ -13,7 +13,7 @@ const ShowsIndex =(props) => {
                 <h1>{shows.date}</h1>
                 </Link>
                 <h3>{shows.venue}</h3>
-                <h3>{shows.info}</h3>
+                
             </div>
         ));
     }

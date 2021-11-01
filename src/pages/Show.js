@@ -15,6 +15,12 @@ const Show =(props) => {
 
     }
 
+    const handleSubmit = event => {
+        event.preventDefault();
+        props.updateShows(editForm);
+        props.history.push('/shows');
+
+    }
     
     
     

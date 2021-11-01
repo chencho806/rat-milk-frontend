@@ -1,16 +1,23 @@
-import React from "react";
-
+import { useState } from "react";
 
 const Show =(props) => {
-    console.log("this is", props)
     const id = props.match.params.id;
     const shows = props.shows;
-    const show = shows.find((s) => {
-        console.log(s._id);
-        console.log(id);
-        return s._id === id
-      })
-    console.log(show)
+    const show = shows.find(s => s._id === id);
+
+    const [ editForm, setEditForm ] = useState(show);
+
+    const handleChange = event => {
+        setEditForm(prevState => ({
+            ...prevState,
+            [event.target.name]: event.target.value
+        }));
+
+    }
+
+    
+    
+    
     return(
         <div className="show">
             <img src={show?.img} alt={show?.date}/>

@@ -30,6 +30,39 @@ const Show =(props) => {
             <h1>{show?.date}</h1>
             <h3>{show?.venue}</h3>
             <h3>{show?.info}</h3>
+            <form onSubmit={handleSubmit}>
+            <input 
+                value={editForm.img} 
+                onChange={handleChange} 
+                type="url"  
+                placeholder="Image URL"
+                name="img"/>
+
+            <input 
+                value={editForm.date} 
+                onChange={handleChange} 
+                type="text"  
+                placeholder="Date"
+                name="date"/>
+
+            <input 
+                value={editForm.venue} 
+                onChange={handleChange} 
+                type="text"  
+                placeholder="Venue"
+                name="venue"/>
+
+            <input 
+                value={editForm.info} 
+                onChange={handleChange} 
+                type="text"  
+                placeholder="Info"
+                name="info"/>
+            <input 
+                type="submit" 
+                value="Edit" />
+                
+            </form>
         </div>
         
     )

@@ -73,7 +73,7 @@ const ShowsIndex =(props) => {
                 <input 
                 value={newForm.info} 
                 onChange={handleChange} 
-                type="info"  
+                type="text"  
                 placeholder="Info"
                 name="info"/>
 

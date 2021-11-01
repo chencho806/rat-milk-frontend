@@ -6,59 +6,59 @@ import Show from '../pages/Show';
 
 
 const Main = (props) => {
-    const [ show, setShow ] = useState(null);
+    const [ shows, setShows ] = useState([]);
 
     const BASE_URL = 'http://localhost:3001/shows/';
 
-    const getShow = async () => {
+    const getShows = async () => {
         const data = await fetch(BASE_URL).then(response => response.json());
-        setShow(data);
+        setShows(data);
     }
 
-    const createShow = async (show) => {
+    const createShows = async (shows) => {
         await fetch(BASE_URL, {
             method: 'POST',
             headers: {
                 'Content-type': 'Application/json'
             },
-            body: JSON.stringify(show)
+            body: JSON.stringify(shows)
         });
 
-        getShow();
+        getShows();
     }
 
-    const updateShow = async (show) => {
+    const updateShows = async (shows, id) => {
         await fetch(BASE_URL + id, {
             method: 'PUT',
             headers: {
                 'Content-type': 'Application/json'
             },
-            body: JSON.stringify(show)
+            body: JSON.stringify(shows)
         });
-        getShow();
+        getShows();
     }
 
-    const deleteShow = async id => {
+    const deleteShows = async id => {
         await fetch(BASE_URL + id, {method: 'DELETE'});
-        getShow();
+        getShows();
     }
 
-    useEffect(() => getShow(), []);
+    useEffect(() => getShows(), []);
 
     return (
         <main>
             <Switch>
-                <Route exact path= "/">
-                    <ShowsIndex show={show} createShow={createShow}/>
+                <Route exact path= "/shows">
+                    <ShowsIndex shows={shows} createShows={createShows}/>
                 </Route>
                 <Route 
-                    path="/:id" 
+                    path="/shows/:id" 
                     render={(rp) => (
                         <Show 
                             {...rp}
-                            show={show}
-                            updateShow={updateShow}
-                            deleteShow={deleteShow}
+                            shows={shows}
+                            updateShows={updateShows}
+                            deleteShows={deleteShows}
                         />
                     )} 
                 />

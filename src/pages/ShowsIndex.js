@@ -7,16 +7,17 @@ const ShowsIndex =(props) => {
     const [newForm, setNewForm ] = useState(getNewState());
 
     const loaded = () => {
-        return props.show.map(show => (
-            <div key={show._id} className="show">
-                <Link to={`/shows/${show._id}`}>
-                    <h1>{show.date}</h1>
+        return props.shows.map(shows => (
+            <div key={shows._id} className="shows">
+                <Link to={`/shows/${shows._id}`}>
+                <h1>{shows.date}</h1>
                 </Link>
-                <h3>{show.venue}</h3>
-                <h3>{show.info}</h3>
+                <h3>{shows.venue}</h3>
+                <h3>{shows.info}</h3>
             </div>
         ));
     }
+                    
 
     const loading = () => <h1>Loading ...</h1>;
 
@@ -32,7 +33,7 @@ const ShowsIndex =(props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        props.createShow(newForm)
+        props.createShows(newForm)
         setNewForm(getNewState());
     }
 
@@ -79,7 +80,7 @@ const ShowsIndex =(props) => {
                 <input type="submit" value= "Add" />
             </form>
             
-            { props.show ? loaded() : loading() }
+            { props.shows ? loaded() : loading() }
         </section>
     )
 };

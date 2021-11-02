@@ -8,15 +8,18 @@ const ShowsIndex =(props) => {
 
     const loaded = () => {
         return props.shows.map(shows => (
-            <div key={shows._id} className="shows">
+            
+            
+            <div key={shows._id} className="showList">
                 <Link to={`/shows/${shows._id}`}>
                 <h1>{shows.date}</h1>
                 </Link>
                 <h3>{shows.venue}</h3>
-                
             </div>
+            
         ));
     }
+                
                     
 
     const loading = () => <h1>Loading ...</h1>;

@@ -4,6 +4,7 @@ import ShowsIndex from '../pages/ShowsIndex';
 import Home from '../pages/Home';
 import Show from '../pages/Show';
 import Videos from '../pages/Videos';
+import Contact from '../pages/Contact';
 import Header from './Header';
 import Background from './Background';
 import Footer from './Footer';
@@ -63,6 +64,9 @@ const Main = (props) => {
                 </Route>
                 <Route path="/videos">
                     <Videos />
+                </Route>
+                <Route>
+                    <Contact />
                 </Route>
                 <Route 
                     path="/shows/:id" 

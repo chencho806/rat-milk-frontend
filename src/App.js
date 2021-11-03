@@ -9,10 +9,10 @@ import Background from './components/Background';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Background />
+      {/* <Header />
+      <Background /> */}
       <Main />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

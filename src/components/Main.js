@@ -1,7 +1,11 @@
 import  { useState, useEffect } from 'react'
 import { Route, Switch } from 'react-router-dom';
 import ShowsIndex from '../pages/ShowsIndex';
+import Home from '../pages/Home';
 import Show from '../pages/Show';
+import Header from './Header';
+import Background from './Background';
+import Footer from './Footer';
 
 
 
@@ -47,10 +51,16 @@ const Main = (props) => {
 
     return (
         <main>
+            <Header />
+            <Background />
             <Switch>
-                <Route exact path= "/shows">
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route path= "/shows">
                     <ShowsIndex shows={shows} createShows={createShows}/>
                 </Route>
+                
                 <Route 
                     path="/shows/:id" 
                     render={(rp) => (
@@ -65,6 +75,7 @@ const Main = (props) => {
                     )} 
                 />
             </Switch>
+            <Footer />
         </main>
     );
 }

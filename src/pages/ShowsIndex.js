@@ -11,10 +11,11 @@ const ShowsIndex =(props) => {
             
             
             <div key={shows._id} className="showList">
-                <Link to={`/shows/${shows._id}`}>
                 <h1>{shows.date}</h1>
-                </Link>
                 <h3>{shows.venue}</h3>
+                <Link to={`/shows/${shows._id}`}>
+                <h3>Details</h3>
+                </Link>
             </div>
             
         ));

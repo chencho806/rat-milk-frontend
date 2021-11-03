@@ -10,7 +10,7 @@ const Header=(props) => {
                 <Link className="Links" to="/">Home</Link>
                 <Link className="Links" to="/shows">Shows</Link>
                 <Link className="Links" to="/videos">Videos</Link>
-                <Link className="Links">Merch</Link>
+                <Link className="Links" to="https://finesoutherngentlemen.com/search?type=product&q=rattlesnake+milk">Merch</Link>
                 <Link className="Links">Contact</Link>
             </nav>
 

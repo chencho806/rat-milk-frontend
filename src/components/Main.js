@@ -62,9 +62,6 @@ const Main = (props) => {
                 <Route exact path="/">
                     <Home />
                 </Route>
-                <Route path= "/shows">
-                    <ShowsIndex shows={shows} createShows={createShows}/>
-                </Route>
                 <Route path="/videos">
                     <Videos />
                 </Route>
@@ -73,6 +70,9 @@ const Main = (props) => {
                 </Route>
                 <Route path="/merch">
                     <Merch />
+                </Route>
+                <Route exact path= "/shows">
+                    <ShowsIndex shows={shows} createShows={createShows}/>
                 </Route>
                 <Route 
                     path="/shows/:id" 
@@ -87,6 +87,7 @@ const Main = (props) => {
                         
                     )} 
                 />
+                
             </Switch>
             <Footer />
         </main>

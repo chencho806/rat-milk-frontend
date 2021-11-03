@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
+
 
 
 const Merch =(props) => {
 
-    return <h1></h1>
+    return <h1>Merch</h1>
 };
 
 

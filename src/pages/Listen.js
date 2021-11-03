@@ -1,0 +1,24 @@
+import SpotifyPlayer from 'react-spotify-player'
+
+const Listen=(props) => {
+  const size = {
+    width: '50%',
+    height: 300,
+  };
+  const view = 'list'; 
+  const theme = 'black'; 
+  
+  return (
+    <SpotifyPlayer
+      uri= "https://open.spotify.com/album/3UrUNyumXYfBUynAvcyMC9"
+      size={size}
+      view={view}
+      theme={theme}
+    />
+  )
+};
+
+
+
+
+export default Listen

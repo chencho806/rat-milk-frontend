@@ -6,6 +6,7 @@ import Show from '../pages/Show';
 import Videos from '../pages/Videos';
 import Contact from '../pages/Contact';
 import Merch from '../pages/Merch';
+import Listen from '../pages/Listen'
 import Header from './Header';
 import Background from './Background';
 import Footer from './Footer';
@@ -67,6 +68,9 @@ const Main = (props) => {
                 </Route>
                 <Route path="/contact">
                     <Contact />
+                </Route>
+                <Route path="/listen">
+                    <Listen />
                 </Route>
                 <Route path="/merch">
                     <Merch />

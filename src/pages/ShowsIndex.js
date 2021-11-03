@@ -11,14 +11,22 @@ const ShowsIndex =(props) => {
             
             
             <div key={shows._id} className="showList">
-                <Link to={`/shows/${shows._id}`}>
-                <h1>{shows.date}</h1>
+                <div className="Date">
+                    <h1>{shows.date}</h1>
+                </div>
+                
+                <div className="Venue">
+                    <h3>{shows.venue}</h3>
+                </div>
+
+                <Link className="Details" to={`/shows/${shows._id}`}>
+                    <button>Details</button>
                 </Link>
-                <h3>{shows.venue}</h3>
             </div>
             
         ));
     }
+
                 
                     
 
@@ -73,7 +81,9 @@ const ShowsIndex =(props) => {
                 placeholder="Venue"
                 name="venue"/>
 
-                <input 
+                <textarea
+                rows="10"
+                cols="17"
                 value={newForm.info} 
                 onChange={handleChange} 
                 type="text"  

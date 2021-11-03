@@ -1,5 +1,9 @@
+import YouTubePlayer from "react-player/youtube";
+
 const Videos =(props) => {
-    return <h1>Hold my beer foo...watch this!</h1>
+    return <YouTubePlayer 
+        url = "https://www.youtube.com/watch?v=DBkmAOZav0Y"
+    />
 };
 
 

@@ -6,7 +6,7 @@ const Header=(props) => {
     };
     return (
         <header className="Header">
-            <Link className="Title" to="/shows">
+            <Link className="Title" to="/">
                 <h1>Rattlesnake Milk</h1>
             </Link>
             <nav>

@@ -1,5 +1,5 @@
 const Videos =(props) => {
-    return <h1>Videos</h1>
+    return <h1>Hold my beer foo...watch this!</h1>
 };
 
 

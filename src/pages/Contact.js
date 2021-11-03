@@ -1,5 +1,5 @@
 const Contact =(props) => {
-    return <h1>Contact</h1>
+    return <h1>Bout to make contact with these hands foo!</h1>
 };
 
 

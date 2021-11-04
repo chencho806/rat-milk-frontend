@@ -1,6 +1,6 @@
 # Rattlesnake Milk Website
 
-This is my third project for General Assembly SEIR Program. The website is a MERN stack app I've built is for a band called Rattlesnake Milk based out of Lockhart, Tx. 
+This is my third project for General Assembly SEIR Program. The website is a MERN stack application I have built for a band called Rattlesnake Milk based out of Lockhart, Tx. I've built two separate frontends. One is the admin page with forms to update the bands upcoming show dates and the other is the page that visitors will see. Both are connected to the same backend so anything created on the admin with copulate to the visitor site. 
 
 # Technologies Used
 

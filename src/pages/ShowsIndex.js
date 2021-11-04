@@ -1,33 +1,37 @@
 
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
+import Footer from '../components/Footer';
 
 const ShowsIndex =(props) => {
 
     const [newForm, setNewForm ] = useState(getNewState());
 
+    
+
     const loaded = () => {
         return props.shows.map(shows => (
-            <>
-            <div>
-
-            </div>
-            <div key={shows._id} className="showList">
-                <div className="Date">
+            <table>
+            <tr key={shows._id} className="showList">
+                <td>
                     <h1>{shows.date}</h1>
-                </div>
+                </td>
                 
-                <div className="Venue">
+                <td>
                     <h3>{shows.venue}</h3>
-                </div>
-
+                </td>
+                <td>
                 <Link className="Details" to={`/shows/${shows._id}`}>
                     <button>Details</button>
                 </Link>
-            </div>
-            </>
+                </td>
+            </tr>
+
+            </table>
         ));
     }
+        
+            
 
                 
                     
@@ -60,6 +64,7 @@ const ShowsIndex =(props) => {
     }
 
     return(
+                
         <section>
             <form className="Form" onSubmit={handleSubmit}>
                 <input 
@@ -95,8 +100,10 @@ const ShowsIndex =(props) => {
                 <input type="submit" value= "Add" />
             </form>
             
+                
             { props.shows ? loaded() : loading() }
         </section>
+        
     )
 };
 

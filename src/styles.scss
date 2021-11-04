@@ -4,22 +4,26 @@
 
 
 
-div.showList {
-  border-color: black;
-  // border-style: solid;
-  // border-bottom: solid black;
-  border-top: solid black;
-  display: row;
-}
-
-
-div.background {
-  display: flex;
-  justify-content: center;
-  height: 50%;
+table {
+  border-top: 1px solid black;
   width: 100%;
-
+  justify-content: space-evenly;
+  text-align: left;
+  padding-left: 10px;
 }
+
+td {
+  justify-content: space-evenly;
+}
+
+
+// div.background {
+//   display: flex;
+//   justify-content: center;
+//   height: 50%;
+//   width: 100%;
+
+// }
 
 
 .Links {

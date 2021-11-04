@@ -8,7 +8,6 @@ import Contact from '../pages/Contact';
 import Merch from '../pages/Merch';
 import Listen from '../pages/Listen'
 import Header from './Header';
-// import Background from './Background';
 import Footer from './Footer';
 
 

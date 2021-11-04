@@ -8,8 +8,10 @@ const ShowsIndex =(props) => {
 
     const loaded = () => {
         return props.shows.map(shows => (
-            
-            
+            <>
+            <div>
+
+            </div>
             <div key={shows._id} className="showList">
                 <div className="Date">
                     <h1>{shows.date}</h1>
@@ -23,7 +25,7 @@ const ShowsIndex =(props) => {
                     <button>Details</button>
                 </Link>
             </div>
-            
+            </>
         ));
     }
 

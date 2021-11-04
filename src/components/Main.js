@@ -8,7 +8,7 @@ import Contact from '../pages/Contact';
 import Merch from '../pages/Merch';
 import Listen from '../pages/Listen'
 import Header from './Header';
-import Background from './Background';
+// import Background from './Background';
 import Footer from './Footer';
 
 
@@ -16,7 +16,8 @@ import Footer from './Footer';
 const Main = (props) => {
     const [ shows, setShows ] = useState([]);
 
-    const BASE_URL = 'http://localhost:3001/shows/';
+    // const BASE_URL = 'http://localhost:3001/shows/';
+    const BASE_URL = 'https://rattlesnakemilk.herokuapp.com/shows/';
 
     const getShows = async () => {
         const data = await fetch(BASE_URL).then(response => response.json());
@@ -58,7 +59,7 @@ const Main = (props) => {
     return (
         <main>
             <Header />
-            <Background />
+            {/* <Background /> */}
             <Switch>
                 <Route exact path="/">
                     <Home />

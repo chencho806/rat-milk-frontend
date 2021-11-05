@@ -16,6 +16,13 @@ This is my third project for General Assembly SEIR Program. The website is a MER
 ![Listen Page](./Images/bqVAgxa.png)
 ![Videos Page](./Images/3Hd926p.png)
 # Getting Started
+
+Admin Site
+
+[Click here](https://rattlesnakemilkadmin.netlify.app/) to see the deployed project.
+
+Visitor Site
+
 [Click here](https://rattlesnakemilk.netlify.app/) to see the deployed project.
 
 # Future Enhancements

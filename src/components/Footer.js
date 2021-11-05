@@ -1,5 +1,7 @@
 const Footer =(props) => {
-    return <h1>Footer</h1>
+    return (
+        <p>Copyright &copy; All Rights Reserved Rattlesnake Milk {new Date().getFullYear}</p>
+    )
 };
 
 

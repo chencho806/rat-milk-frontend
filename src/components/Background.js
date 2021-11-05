@@ -1,8 +1,8 @@
 const Background =(props) => {
     return (
-        <div className="background">
+        <div>
             
-            <img src="https://i.imgur.com/NpywXWY.jpg?1" alt="" />
+            <img src="https://i.imgur.com/izHJcF7.jpg?1" alt="" className="background"/>
         </div>
     )
 };

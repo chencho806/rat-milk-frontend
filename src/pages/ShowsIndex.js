@@ -1,7 +1,8 @@
 
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
-import Footer from '../components/Footer';
+
+
 
 const ShowsIndex =(props) => {
 
@@ -12,9 +13,10 @@ const ShowsIndex =(props) => {
     const loaded = () => {
         return props.shows.map(shows => (
             <table>
+                <tbody>
             <tr key={shows._id} className="showList">
                 <td>
-                    <h1>{shows.date}</h1>
+                    <h3>{shows.date}</h3>
                 </td>
                 
                 <td>
@@ -26,7 +28,7 @@ const ShowsIndex =(props) => {
                 </Link>
                 </td>
             </tr>
-
+            </tbody>
             </table>
         ));
     }
@@ -64,6 +66,11 @@ const ShowsIndex =(props) => {
     }
 
     return(
+        <>
+        <div>
+            <img src="https://i.imgur.com/izHJcF7.jpg?1" alt="" className="background"/>
+        </div>
+            
                 
         <section>
             <form className="Form" onSubmit={handleSubmit}>
@@ -103,7 +110,7 @@ const ShowsIndex =(props) => {
                 
             { props.shows ? loaded() : loading() }
         </section>
-        
+        </>
     )
 };
 

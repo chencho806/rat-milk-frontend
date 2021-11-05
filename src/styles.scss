@@ -21,6 +21,7 @@ table, td {
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid black;
+  font-family: Helvetica, sans-serif;
   
   
 }
@@ -30,15 +31,19 @@ table, td {
   color: black;
   margin: 1rem;
   text-decoration: none;
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
 }
 
 .Title {
   text-decoration: none;
   color: black;
   font-size: 24px;
-  
+  font-family: Helvetica, sans-serif;
   
 }
+  
+  
 
 .Form {
   display: flex;
@@ -141,4 +146,8 @@ section {
   width: 100%;
   height: auto;
   padding-top: 15px;
+ }
+
+ .RM {
+   font-weight: lighter;
  }

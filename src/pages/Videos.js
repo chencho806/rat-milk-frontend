@@ -2,6 +2,10 @@ import YouTubePlayer from "react-player/youtube";
 
 const Videos =(props) => {
     return (
+        <>
+        <div>
+            <img src="https://i.imgur.com/f1K93f6.jpg?1" alt="" className="videosImage"/>
+        </div>
         <div className="videoContainer">
 
             <div className="Videos">
@@ -63,7 +67,7 @@ const Videos =(props) => {
         </div>
 
 
-
+        </>
 
 
        

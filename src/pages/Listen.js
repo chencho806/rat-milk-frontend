@@ -2,8 +2,9 @@ import SpotifyPlayer from 'react-spotify-player'
 
 const Listen=(props) => {
   const size = {
-    width: '79%',
+    width: '89%',
     height: 300,
+    
   };
   const view = 'list'; 
   const theme = 'black'; 

@@ -58,7 +58,6 @@ const Main = (props) => {
     return (
         <main>
             <Header />
-            {/* <Background /> */}
             <Switch>
                 <Route exact path="/">
                     <Home />

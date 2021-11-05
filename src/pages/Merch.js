@@ -3,7 +3,11 @@
 
 const Merch =(props) => {
 
-    return <h1>Merch</h1>
+    return (
+        <div className="imgDiv">
+            <img src="https://i.imgur.com/ZpZxmez.jpg" alt="" className="merchImage"/>
+        </div>
+    )
 };
 
 

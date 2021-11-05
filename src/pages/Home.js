@@ -1,15 +1,8 @@
-import IMG_0013 from '../Static/IMG_0013.jpg'
-import { StyledHome } from '../styles';
-
-
-
 const Home =(props) => {
     return (
-        
-        <StyledHome IMG_0013={IMG_0013}>
-            
-            
-        </StyledHome>
+        <div className="imgDiv">
+            <img src="https://i.imgur.com/SNmrUIl.jpg" alt="" className="homeImage"/>
+        </div>
     )
 }
 

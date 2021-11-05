@@ -14,7 +14,7 @@ const Header=(props) => {
                 <Link className="Links" to="/shows">Shows</Link>
                 <Link className="Links" to="/listen">Listen</Link>
                 <Link className="Links" to="/videos">Videos</Link>
-                <Link className="Links" to="/" onClick={handleClick}>Merch</Link>
+                <Link className="Links" to="/merch" onClick={handleClick}>Merch</Link>
                 <Link className="Links" to="/contact">Contact</Link>
             </nav>
 

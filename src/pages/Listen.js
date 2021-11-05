@@ -14,12 +14,14 @@ const Listen=(props) => {
     <div>
       <img src="https://i.imgur.com/ruWZI7e.jpg?1" alt="" className="listenImage"/>
     </div>
+    <div className="player">
     <SpotifyPlayer
       uri= "https://open.spotify.com/album/3UrUNyumXYfBUynAvcyMC9"
       size={size}
       view={view}
       theme={theme}
     />
+    </div>
     </>
   )
 };

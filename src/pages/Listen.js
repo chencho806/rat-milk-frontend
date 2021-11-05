@@ -2,7 +2,7 @@ import SpotifyPlayer from 'react-spotify-player'
 
 const Listen=(props) => {
   const size = {
-    width: '100%',
+    width: '79%',
     height: 300,
   };
   const view = 'list'; 

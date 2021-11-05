@@ -61,13 +61,14 @@ table, td {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  max-height: 80vh;
+  
   
   
 }
 
 .Videos {
-  padding: 30px;
+  padding: 20px;
+  
   
 }
 
@@ -78,13 +79,13 @@ section {
 
   
   .homeImage {
-    width: 100%;
+    width: 85vh;
     height: auto;
     padding-top: 15px;
   }
   
   .merchImage {
-    width: 100%;
+    width: 85vh;
     height: auto;
     padding-top: 15px;
   }
@@ -92,33 +93,36 @@ section {
   
   .showListImage {
     
-    width: 100%;
+    max-width: 85vh;
     height: auto;
     padding-top: 15px;
+    
     
   }
 
   .videosImage {
-    width: 100%;
+    width: 85vh;
     height: auto;
     padding-top: 15px;
   }
   
   .listenImage {
-    width: 100%;
+    width: 85vh;
     height: auto;
     padding-top: 15px;
+    padding-bottom: 25px;
   }
   
   .contactImage {
-    width: 100%;
+    width: 85vh;
     height: auto;
     padding-top: 15px;
   }
 
   .contactsContainer {
-    height: 25vh;
-    padding-top: 75px;
+    // height: 6vh;
+    padding-top: 14vh;
+    padding-bottom: 16vh;
   
   }
   
@@ -133,15 +137,21 @@ section {
 
 
  .Footer {
-  padding-top: 50px;
+   height: 35px;
+  // padding-top: 50px;
  }
 
  .flyerImage {
-  width: 100%;
+  width: 60vh;
   height: auto;
   padding-top: 15px;
+
  }
 
  .RM {
    font-weight: lighter;
+ }
+
+ h1, h3, p {
+  font-family: Helvetica, sans-serif;
  }

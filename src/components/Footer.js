@@ -1,6 +1,8 @@
 const Footer =(props) => {
     return (
-        <p>Copyright &copy; All Rights Reserved Rattlesnake Milk {new Date().getFullYear}</p>
+        <footer className="Footer">
+            <p>Copyright &copy; All Rights Reserved Rattlesnake Milk {new Date().getFullYear}</p>
+        </footer>
     )
 };
 

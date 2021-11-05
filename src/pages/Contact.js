@@ -1,5 +1,15 @@
 const Contact =(props) => {
-    return <h1>Bout to make contact with these hands foo!</h1>
+    return (
+        <>
+        <div >
+            <img src="https://i.imgur.com/FcHnMGb.jpg?1" alt="" className="contactImage"/>
+        </div>
+        <div className="contactsContainer">
+            <h3>Booking:</h3>
+            <p className="email">rattlesnakemilk@gmail.com</p>
+        </div>
+        </>
+    )
 };
 
 

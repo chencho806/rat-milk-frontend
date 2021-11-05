@@ -32,12 +32,12 @@ const Show =(props) => {
     
     return(
         <div className="show">
-            <img src={show?.img} alt={show?.date}/>
+            <img src={show?.img} alt={show?.date} className="flyerImage"/>
             <h1>{show?.date}</h1>
             <h3>{show?.venue}</h3>
             <h3>{show?.info}</h3>
             <button onClick={removeShow}>DELETE</button>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="Form">
             <input 
                 value={editForm.img} 
                 onChange={handleChange} 

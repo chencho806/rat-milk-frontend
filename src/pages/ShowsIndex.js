@@ -11,25 +11,28 @@ const ShowsIndex =(props) => {
     
 
     const loaded = () => {
-        return props.shows.map(shows => (
+        return props.shows.map(show => (
+            <div key={show._id} >
             <table>
                 <tbody>
-            <tr key={shows._id} className="showList">
+            <tr className="showList" >
                 <td>
-                    <h3>{shows.date}</h3>
+                    <h3>{show.date}</h3>
                 </td>
                 
                 <td>
-                    <h3>{shows.venue}</h3>
+                    <h3>{show.venue}</h3>
                 </td>
                 <td>
-                <Link className="Details" to={`/shows/${shows._id}`}>
+                <Link className="Details" to={`/shows/${show._id}`}>
                     <button>Details</button>
                 </Link>
                 </td>
             </tr>
             </tbody>
             </table>
+
+            </div>
         ));
     }
         

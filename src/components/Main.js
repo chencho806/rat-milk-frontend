@@ -78,8 +78,7 @@ const Main = (props) => {
                     <ShowsIndex shows={shows} createShows={createShows}/>
                 </Route>
                 <Route 
-                    path="/shows/:id" 
-                    render={(rp) => (
+                     path="/shows/:id" render={rp => (
 
                         <Show 
                             {...rp}
@@ -87,15 +86,14 @@ const Main = (props) => {
                             updateShows={updateShows}
                             deleteShows={deleteShows}
                         />
+                    )} />
+                    
+                </Switch>
+                <Footer />
+            </main>
+        );
+    }
                         
-                    )} 
-                />
-                
-            </Switch>
-            <Footer />
-        </main>
-    );
-}
                
 
 
